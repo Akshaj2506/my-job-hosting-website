@@ -1,9 +1,9 @@
+import JobListings from "../components/JobListings"
+
 const JobsPage = () => {
   return (
     <>
-      <section className="m-auto max-w-lg my-10 px-6">
-        
-      </section>
+    <JobListings showAll={true}/>
     </>
   )
 }
