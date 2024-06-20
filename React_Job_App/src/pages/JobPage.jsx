@@ -1,8 +1,14 @@
-import {Link, useLoaderData } from "react-router-dom"
+import {Link, useLoaderData, useNavigate } from "react-router-dom"
 import ToJobsPage from "../components/ToJobsPage";
 import { FaMapMarker } from "react-icons/fa";
-const JobPage = () => {
+// eslint-disable-next-line react/prop-types
+const JobPage = ({removeJob}) => {
    const job = useLoaderData();
+   const navigate = useNavigate();
+   const onDeleteClick = () => {
+      removeJob(job.id);
+      return navigate("/jobs");
+   }
    return (
       <>
       <ToJobsPage/>
@@ -76,6 +82,7 @@ const JobPage = () => {
                      >Edit Job</Link>
                      <button
                         className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
+                        onClick={onDeleteClick}
                      >
                         Delete Job
                      </button>
