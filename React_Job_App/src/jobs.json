@@ -83,6 +83,20 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "id": "7",
+      "title": "Salesman",
+      "type": "Part-Time",
+      "description": "You have to sell coffee to the customers. I hope you can make good coffee.",
+      "location": "Gurgaon, Haryana",
+      "salary": "Under $50K",
+      "company": {
+        "name": "Starbucks India",
+        "description": "We sell the best coffee",
+        "contactEmail": "starbucks@tata.com",
+        "contactPhone": "12333-65742"
+      }
     }
   ]
 }
